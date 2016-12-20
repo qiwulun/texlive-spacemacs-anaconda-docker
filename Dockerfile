@@ -18,7 +18,7 @@ RUN apt-get install -y git make wget bzip2 ca-certificates \
     mercurial subversion \
     build-essential automake autoconf \
     libpng-dev libz-dev libpoppler-glib-dev libpoppler-private-dev \
-    imagemagick\
+    imagemagick
 
 # RUN apt-get install -y emacs-snapshot emacs-snapshot-el
 RUN apt-get install -y emacs pandoc silversearcher-ag bibtex2html figlet zeal graphviz
