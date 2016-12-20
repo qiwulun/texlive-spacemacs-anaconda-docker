@@ -21,7 +21,7 @@ RUN apt-get install -y git make wget bzip2 ca-certificates \
     imagemagick
 
 # RUN apt-get install -y emacs-snapshot emacs-snapshot-el
-RUN apt-get install -y emacs pandoc silversearcher-ag bibtex2html figlet zeal graphviz ditaa plantuml
+RUN apt-get install -y emacs pandoc silversearcher-ag bibtex2html figlet zeal graphviz 
 RUN apt-get install -y xauth
 
 # anaconda
