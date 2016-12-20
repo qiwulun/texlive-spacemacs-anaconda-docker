@@ -16,12 +16,12 @@ RUN apt-get update
 RUN apt-get install -y git make wget bzip2 ca-certificates \
     libglib2.0-0 libxext6 libsm6 libxrender1 \
     mercurial subversion \
-    build-essential automake autoconf \
+    build-essential openjdk automake autoconf \
     libpng-dev libz-dev libpoppler-glib-dev libpoppler-private-dev \
     imagemagick
 
 # RUN apt-get install -y emacs-snapshot emacs-snapshot-el
-RUN apt-get install -y emacs pandoc silversearcher-ag bibtex2html figlet zeal graphviz 
+RUN apt-get install -y emacs pandoc silversearcher-ag bibtex2html figlet zeal graphviz
 RUN apt-get install -y xauth
 
 # anaconda
