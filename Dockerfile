@@ -16,7 +16,7 @@ RUN apt-get update
 RUN apt-get install -y git make wget bzip2 ca-certificates \
     libglib2.0-0 libxext6 libsm6 libxrender1 \
     mercurial subversion \
-    build-essential openjdk automake autoconf \
+    build-essential openjdk-8-jre automake autoconf \
     libpng-dev libz-dev libpoppler-glib-dev libpoppler-private-dev \
     imagemagick
 
