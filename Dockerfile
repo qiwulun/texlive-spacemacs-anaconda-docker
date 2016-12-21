@@ -21,7 +21,7 @@ RUN apt-get install -y git make wget bzip2 ca-certificates \
     imagemagick
 
 # RUN apt-get install -y emacs-snapshot emacs-snapshot-el
-RUN apt-get install -y emacs pandoc silversearcher-ag bibtex2html figlet zeal graphviz
+RUN apt-get install -y emacs pandoc silversearcher-ag bibtex2html figlet zeal graphviz nikola
 RUN apt-get install -y xauth
 
 # anaconda
@@ -31,7 +31,7 @@ RUN echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
     rm ~/anaconda.sh
 ENV PATH /opt/conda/bin:$PATH
 RUN conda install numpy scipy numba pillow h5py
-RUN pip install rx tqdm keras wakatime patterns flake8 minpy nikola
+RUN pip install rx tqdm keras wakatime patterns flake8 minpy
 
 # texlive
 RUN export LANG=C.UTF-8 &&\
