@@ -93,7 +93,7 @@ RUN export LANG=C.UTF-8 &&\
     rm -rf /var/lib/apt/lists/* &&\
     rm -f /etc/ssh/ssh_host_*
 
-# 字体
+# install fonts
 RUN git clone https://github.com/qiwulun/Fonts.git /opt/fonts && \
     cd /opt/fonts && \
     bash ./install.sh && \
