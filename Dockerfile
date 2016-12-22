@@ -93,13 +93,6 @@ RUN export LANG=C.UTF-8 &&\
     rm -rf /var/lib/apt/lists/* &&\
     rm -f /etc/ssh/ssh_host_*
 
-# install fonts
-RUN git clone https://github.com/qiwulun/Fonts.git /opt/fonts && \
-    cd /opt/fonts && \
-    bash ./install.sh && \
-    cd ~ && \
-    rm -r /opt/fonts
-
 RUN git clone https://github.com/syl20bnr/spacemacs.git /root/.emacs.d
 # RUN git clone https://github.com/syl20bnr/spacemacs.git /root/.emacs.d
 RUN cp /root/.emacs.d/core/templates/.spacemacs.template /root/.spacemacs
